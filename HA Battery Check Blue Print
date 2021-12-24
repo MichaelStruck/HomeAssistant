@@ -70,9 +70,6 @@ trigger:
   at: !input 'time'
 condition:
 - '{{ sensors != '''' and (day | int == 0 or day | int == now().isoweekday()) }}'
-- condition: state
-    entity_id: input_select.house_mode
-    state: Home
 action:
 - choose: []
   default: !input 'actions'
