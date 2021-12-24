@@ -74,4 +74,3 @@ action:
 - choose: []
   default: !input 'actions'
 mode: single
-
